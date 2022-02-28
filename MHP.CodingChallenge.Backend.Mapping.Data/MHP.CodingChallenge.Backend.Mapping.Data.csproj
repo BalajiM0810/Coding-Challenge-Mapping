@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DB\" />
-    <Folder Include="DB\Blocks\" />
     <Folder Include="DTO\Blocks\" />
   </ItemGroup>
   <ItemGroup>

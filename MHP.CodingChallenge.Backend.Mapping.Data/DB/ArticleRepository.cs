@@ -52,6 +52,10 @@ namespace MHP.CodingChallenge.Backend.Mapping.Data.DB
             textBlock.SortIndex = 0;
             result.Add(textBlock);
 
+            TwitterBlock twitterBlock = new TwitterBlock();
+            twitterBlock.UserName = "UserName";
+            result.Add(twitterBlock);
+
             ImageBlock imageBlock = new ImageBlock();
             imageBlock.Image = CreateImage(1L);
             textBlock.SortIndex = 1;
@@ -63,7 +67,7 @@ namespace MHP.CodingChallenge.Backend.Mapping.Data.DB
             result.Add(secondTextBlock);
 
             GalleryBlock galleryBlock = new GalleryBlock();
-            secondTextBlock.SortIndex = 3;
+            galleryBlock.SortIndex = 3;
 
             List<Image> galleryImages = new List<Image>();
             galleryImages.Add(CreateImage(2L));
@@ -95,7 +99,7 @@ namespace MHP.CodingChallenge.Backend.Mapping.Data.DB
             result.LastModifiedBy = "Max Mustermann";
             result.ImageSize = ImageSize.LARGE;
             result.Url = "https://someurl.com/image/" + imageId;
-            return null;
+            return result;
         }
     }
 }
